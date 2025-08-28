@@ -19,14 +19,18 @@ You will:
 
 Things to reflect on:
   - Why is it important to use meaningful variable names?
+  - How do variable naming conventions impact code readability and maintainability?
   - What are the common pitfalls to avoid when naming variables?
   - How do clear variable names benefit team collaboration?
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let buyerName = "Alice";
+let noItemsPurchased = 5;
+let purchaseCost = 20;
+let purchaseDate = new Date().toLocaleDateString(); // Added variable for purchase date
+let storeName = "LaunchCode Boutique"; // Added variable for store name
+let purchaseSummary = "Thank you for shopping at " + storeName + " " + buyerName + ". You bought " 
++ noItemsPurchased + " items for $" + purchaseCost + " on " + purchaseDate + ".";
 
-console.log(d);
+console.log(purchaseSummary);
